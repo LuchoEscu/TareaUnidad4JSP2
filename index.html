@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styless.css">
+    <title>Ej Unidad 4 Parte 2</title>
+</head>
+
+<body id="capa">
+    <div class="cajita">
+        <h2>Seleccione un color</h2>
+
+        <div class="cuadrado" id="blue" onclick="cambiarColor('blue')"></div>
+        <div class="cuadrado" id="green" onclick="cambiarColor('green')"></div>
+        <div class="cuadrado" id="red" onclick="cambiarColor('red')"></div>
+    </div>
+    <br>
+    <div class="cajita" id="caracteres">
+        <h2 for="caracteres" id="cantCaracteres">0 caracteres</h2>
+        <textArea rows="4" class="form-control" name="caracteres" id="caracteres"
+            onkeyup="contadorCaracteres(this)"></textArea>
+    </div>
+    <div class="cajita">
+        <button onclick="alumAprobados()">Alumnos aprobados</button>
+        <p id="alumnosAprobados"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
